@@ -1,15 +1,15 @@
-// Function to check the answer in the Couple's Quiz
 function checkAnswer(guess) {
-    // Find the paragraph element where we will show the result
     const resultElement = document.getElementById('quiz-result');
     
-    // Set the response based on the guess
+    resultElement.className = 'quiz-result'; 
+
     if (guess === 'him') {
-        resultElement.textContent = "Nice try, but we all know it's her! 🥶";
+        resultElement.innerHTML = "Nice try, but we all know it's her! 🥶";
+        resultElement.style.color = "#2C3539"; 
     } else if (guess === 'her') {
-        resultElement.textContent = "Spot on! She is definitely the blanket thief. 🛏️";
+        resultElement.innerHTML = "Spot on! She is definitely the blanket thief. 🛏️";
+        resultElement.style.color = "#C5A059"; 
     }
     
-    // Remove the 'hidden' class so the text appears on the screen
     resultElement.classList.remove('hidden');
 }
