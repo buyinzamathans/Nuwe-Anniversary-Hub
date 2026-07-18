@@ -1,7 +1,6 @@
-/* GLOBAL VARIABLES & RESET */
 :root {
-    --bg-color: #FDFBF7; /* Soft champagne background */
-    --text-main: #2C3539; /* Elegant charcoal */
+    --bg-color: #FDFBF7;
+    --text-main: #2C3539;
     --text-light: #6C7A89;
     --accent-gold: #C5A059;
     --white: #FFFFFF;
@@ -55,13 +54,13 @@ h1, h2, h3 {
 }
 
 .hero-img-wrapper {
-    max-width: 500px; /* This keeps numwe.jpg from being too big */
+    max-width: 500px;
     margin: 0 auto 2rem;
-    border-radius: 12px; /* Soft rounded corners */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Professional shadow */
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     overflow: hidden;
     background-color: var(--white);
-    padding: 10px; /* Creates a subtle photo frame effect */
+    padding: 10px;
 }
 
 .hero-img {
@@ -175,7 +174,7 @@ h1, h2, h3 {
     display: none;
 }
 
-/* CTA / WHATSAPP SECTION */
+/* CTA SECTION */
 .cta-section {
     padding: 2rem 0 5rem;
 }
@@ -194,7 +193,7 @@ h1, h2, h3 {
 
 .btn-primary {
     display: inline-block;
-    background-color: #25D366; /* WhatsApp Green */
+    background-color: #25D366;
     color: var(--white);
     text-decoration: none;
     padding: 15px 35px;
@@ -208,7 +207,6 @@ h1, h2, h3 {
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 2rem;
