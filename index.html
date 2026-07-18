@@ -3,79 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Anniversary!</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Happy Anniversary</title>
+    <!-- Importing Elegant Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- HERO SECTION -->
-    <header class="hero-section">
-        <div class="hero-image-container">
-            <!-- This is where your stunning hero image goes -->
-            <img src="numwe.jpg" alt="The Happy Couple" class="hero-img">
-        </div>
-        <div class="hero-text">
-            <h1>Celebrating [Number] Years of Love</h1>
-            <p>Welcome to our digital scrapbook.</p>
+    <header class="hero">
+        <div class="container text-center">
+            <div class="hero-img-wrapper">
+                <!-- Your specific image perfectly constrained -->
+                <img src="numwe.jpg" alt="The Happy Couple" class="hero-img">
+            </div>
+            <h1 class="hero-title">Celebrating Years of Love</h1>
+            <p class="hero-subtitle">Welcome to our digital scrapbook.</p>
         </div>
     </header>
 
-    <hr class="section-divider">
-
-    <!-- SENTIMENTAL TIMELINE (PLACEHOLDERS) -->
-    <section class="timeline-section" id="timeline">
-        <h2>Our Journey</h2>
-        <p class="subtitle">Memories loading...</p>
-        
-        <div class="timeline-grid">
-            <!-- Placeholder for Future Photos -->
-            <div class="memory-card placeholder">
-                <div class="image-box">
-                    <p>[Insert Embarrassing Photo Here]</p>
+    <!-- TIMELINE SECTION -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <p class="section-subtitle">Memories loading...</p>
+            
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content placeholder-card">
+                        <div class="image-placeholder">
+                            <span>[Insert Embarrassing Photo]</span>
+                        </div>
+                        <h3>The Early Days</h3>
+                    </div>
                 </div>
-                <h3>The Early Days</h3>
-            </div>
 
-            <div class="memory-card placeholder">
-                <div class="image-box">
-                    <p>[Insert Wedding Photo Here]</p>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content placeholder-card">
+                        <div class="image-placeholder">
+                            <span>[Insert Wedding Photo]</span>
+                        </div>
+                        <h3>Tying the Knot</h3>
+                    </div>
                 </div>
-                <h3>Tying the Knot</h3>
             </div>
         </div>
     </section>
 
-    <hr class="section-divider">
-
-    <!-- FUN INTERACTIVE QUIZ -->
-    <section class="quiz-section" id="quiz">
-        <h2>How Well Do You Know Them?</h2>
-        <div class="quiz-container">
-            <p class="question">Who is more likely to steal the blankets?</p>
-            <div class="quiz-buttons">
-                <button class="quiz-btn" onclick="checkAnswer('him')">Him</button>
-                <button class="quiz-btn" onclick="checkAnswer('her')">Her</button>
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section">
+        <div class="container text-center">
+            <h2 class="section-title">How Well Do You Know Them?</h2>
+            <div class="quiz-card">
+                <p class="quiz-question">Who is more likely to steal the blankets?</p>
+                <div class="quiz-options">
+                    <button class="btn-outline" onclick="checkAnswer('him')">Him</button>
+                    <button class="btn-outline" onclick="checkAnswer('her')">Her</button>
+                </div>
+                <div id="quiz-result" class="quiz-result hidden"></div>
             </div>
-            <p id="quiz-result" class="hidden"></p>
         </div>
     </section>
 
-    <hr class="section-divider">
-
-    <!-- THE ASK / CALL TO ACTION -->
+    <!-- CALL TO ACTION -->
     <section class="cta-section">
-        <h2>Help Us Build This Page!</h2>
-        <p>We are putting together a surprise digital scrapbook for their anniversary.</p>
-        <p>Please send your favorite pictures and videos of the couple so we can add them here.</p>
-        <!-- Replace the number below with your actual WhatsApp number -->
-        <a href="https://wa.me/256789537954" class="whatsapp-btn">Send Photos on WhatsApp</a>
+        <div class="container text-center cta-card">
+            <h2>Help Us Build This Page</h2>
+            <p>We are putting together a surprise digital scrapbook. Please send your favorite pictures and videos of the couple so we can feature them here.</p>
+            <a href="https://wa.me/256XXXXXXXXX" class="btn-primary">Send Photos on WhatsApp</a>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>Made with love for the happy couple.</p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
