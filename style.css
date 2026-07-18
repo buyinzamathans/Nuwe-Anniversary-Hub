@@ -53,15 +53,35 @@ h1, h2, h3 {
     padding: 4rem 0 3rem;
 }
 
+/* HERO SECTION ENHANCEMENTS */
 .hero-img-wrapper {
-    max-width: 500px;
+    max-width: 550px; 
     margin: 0 auto 2rem;
-    border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-radius: 16px; 
+    /* Soft, elegant shadow for depth */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); 
     overflow: hidden;
     background-color: var(--white);
-    padding: 10px;
+    /* Creates a clean, professional photo frame effect */
+    padding: 12px; 
+    transition: transform 0.4s ease;
 }
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    /* This acts like a professional photo filter: slightly brightens, adds crisp contrast, and gently boosts the color */
+    filter: brightness(1.05) contrast(1.03) saturate(1.08); 
+    transition: transform 0.5s ease;
+}
+
+/* Adds a very premium, subtle zoom effect when someone taps or hovers over the photo */
+.hero-img-wrapper:hover .hero-img {
+    transform: scale(1.02);
+}
+
 
 .hero-img {
     width: 100%;
