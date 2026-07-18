@@ -1,0 +1,218 @@
+/* GLOBAL VARIABLES & RESET */
+:root {
+    --bg-color: #FDFBF7; /* Soft champagne background */
+    --text-main: #2C3539; /* Elegant charcoal */
+    --text-light: #6C7A89;
+    --accent-gold: #C5A059;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 4rem 0 3rem;
+}
+
+.hero-img-wrapper {
+    max-width: 500px; /* This keeps numwe.jpg from being too big */
+    margin: 0 auto 2rem;
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Professional shadow */
+    overflow: hidden;
+    background-color: var(--white);
+    padding: 10px; /* Creates a subtle photo frame effect */
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+/* TIMELINE SECTION */
+.timeline-section {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+}
+
+.placeholder-card {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+}
+
+.image-placeholder {
+    background-color: #F0F0F0;
+    border: 2px dashed #D0D0D0;
+    height: 250px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* QUIZ SECTION */
+.quiz-section {
+    padding: 4rem 0;
+}
+
+.quiz-card {
+    background: var(--white);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.quiz-question {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.quiz-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: var(--accent-gold);
+    color: var(--white);
+}
+
+.quiz-result {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* CTA / WHATSAPP SECTION */
+.cta-section {
+    padding: 2rem 0 5rem;
+}
+
+.cta-card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.cta-card p {
+    margin: 1.5rem 0 2rem;
+    color: var(--text-light);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp Green */
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--text-main);
+    color: var(--white);
+    font-size: 0.9rem;
+}
