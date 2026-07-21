@@ -7,12 +7,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* A few quick inline styles to ensure the images fit nicely in the cards */
+        /* Timeline Image Styles */
         .timeline-content img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 15px;
+        }
+
+        /* New Gallery Grid Styles */
+        .gallery-grid {
+            display: grid;
+            /* This creates responsive columns that wrap automatically */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        .gallery-grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover; /* Keeps images uniform without stretching them */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Gentle zoom effect when hovering over gallery photos */
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -22,7 +47,6 @@
     <header class="hero">
         <div class="container text-center">
             <div class="hero-img-wrapper">
-                <!-- Using the beautiful posed portrait for the hero image -->
                 <img src="IMG-20260721-WA0004.jpg" alt="The Happy Couple" class="hero-img">
             </div>
             <h1 class="hero-title">Celebrating Years of Love</h1>
@@ -37,7 +61,6 @@
             <p class="section-subtitle">A look back at our special day...</p>
             
             <div class="timeline">
-                
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <img src="IMG-20260721-WA0002.jpg" alt="Ring Exchange">
@@ -69,7 +92,27 @@
                         <p>Surrounded by the love and support of our favorite people.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- NEW GALLERY SECTION -->
+    <section class="gallery-section">
+        <div class="container text-center">
+            <h2 class="section-title">Captured Moments</h2>
+            <p class="section-subtitle">More beautiful memories from the celebration.</p>
+            
+            <div class="gallery-grid">
+                <img src="IMG-20260721-WA0020.jpg" alt="Couple Walking and Laughing">
+                <img src="IMG-20260721-WA0018.jpg" alt="Cutting the Ribbon">
+                <img src="IMG-20260721-WA0019.jpg" alt="Bride and Bridesmaids">
+                <img src="IMG-20260721-WA0016.jpg" alt="Groom Preparation">
+                <img src="IMG-20260721-WA0017.jpg" alt="Full Wedding Party">
+                <img src="IMG-20260721-WA0015.jpg" alt="Groom Solo Portrait">
+                <img src="IMG-20260721-WA0014.jpg" alt="A Kiss on the Hand">
+                <img src="IMG-20260721-WA0013.jpg" alt="Groomsmen Squad">
+                <img src="IMG-20260721-WA0012.jpg" alt="Couple Laughing Together">
+                <img src="IMG-20260721-WA0005_2.jpg" alt="Walking Down the Aisle">
             </div>
         </div>
     </section>
@@ -102,7 +145,6 @@
         <p>Made with love for the happy couple.</p>
     </footer>
 
-    <!-- This now correctly points to your app.js file -->
     <script src="app.js"></script>
 </body>
 </html>
